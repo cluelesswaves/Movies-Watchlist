@@ -1,4 +1,8 @@
 let savedMovies = JSON.parse(localStorage.getItem("WatchlistMovies"));
+if (savedMovies == false) {
+    savedMovies = [];
+}
+
 const containerHtml =  document.getElementById("container");
 window.addEventListener("load", renderMovies);
 
