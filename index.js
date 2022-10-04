@@ -1,8 +1,8 @@
 const searchBtn = document.getElementById("search-btn");
 const searchInput = document.getElementById("search-input");
 const movieHeader = document.getElementById("movie-header");
-const containerHtml =  document.getElementById("container");
-let savedMovies = [];
+const containerHtml = document.getElementById("container");
+let savedMovies = JSON.parse(localStorage.getItem("WatchlistMovies"));
 
 
 
