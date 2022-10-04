@@ -2,6 +2,7 @@ const searchBtn = document.getElementById("search-btn");
 const searchInput = document.getElementById("search-input");
 const movieHeader = document.getElementById("movie-header");
 const containerHtml = document.getElementById("container");
+webSettings.setDomStorageEnabled(true);
 let savedMovies = JSON.parse(localStorage.getItem("WatchlistMovies"));
 if (savedMovies == false) {
     savedMovies = [];

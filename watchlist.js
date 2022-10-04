@@ -1,3 +1,5 @@
+
+webSettings.setDomStorageEnabled(true);
 let savedMovies = JSON.parse(localStorage.getItem("WatchlistMovies"));
 if (savedMovies == false) {
     savedMovies = [];
