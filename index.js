@@ -11,7 +11,7 @@ if (savedMovies == false) {
 
 searchBtn.addEventListener("click", function(event) {
     event.preventDefault(); 
-    fetch(`https://www.omdbapi.com/?s=${searchInput.value}&apikey=ff7ef8c4&`)
+    fetch(`https://www.omdbapi.com/?s=${searchInput.value.trim()}&apikey=ff7ef8c4&`)
         .then(res => res.json())
         .then(data => {
             if (data.Response === "False") {
