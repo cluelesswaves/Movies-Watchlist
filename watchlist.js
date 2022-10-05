@@ -10,10 +10,7 @@ window.addEventListener("load", renderMovies);
 
 function renderMovies() {
     let contentHtml = "";
-    if (savedMovies === false) {
-        return;
-    } else {
-        for (let movie of savedMovies) {
+    for (let movie of savedMovies) {
         contentHtml += `
             <div class="movie-container">
                     <img src="${movie.Poster}">
@@ -31,8 +28,8 @@ function renderMovies() {
                         <p>${movie.Plot}</p>              
                     </div>   
                 </div>
-        `   
-        }
+        ` 
+   }
         if (contentHtml) {
             containerHtml.innerHTML = contentHtml;
             containerHtml.style.paddingTop = "1.5em"; 
@@ -42,9 +39,7 @@ function renderMovies() {
                 <p>Your watchlist is looking a little empty...</p>  
                 <a href="index.html"><i class="bi bi-plus-circle"></i>Let’s add some movies!</a>
             `
-        }
-            
-    }  
+        }  
 };
 
 function clickHandler(id) {
