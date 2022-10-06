@@ -74,7 +74,7 @@ function clickHandler(id) {
 function errorRender(data) {
     movieHeader.textContent = data.Error; 
     movieHeader.style.color = "#787878"
-    document.querySelector("main > i").style.display = "none";
+    document.querySelector("main i").style.display = "none";
 }
 
 
